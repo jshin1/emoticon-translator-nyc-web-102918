@@ -2,10 +2,7 @@
 require "yaml"
 require "pry"
 
-
-
 def load_library(file_path)
-  
   get_meaning = {}
   emoticons = YAML.load_file('./lib/emoticons.yml')
   hash = {'get_meaning' => {}, 'get_emoticon' => {}}
@@ -45,4 +42,3 @@ def get_english_meaning(file_path, emoticon)
     meaning
   end
 end
-
